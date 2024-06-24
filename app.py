@@ -178,9 +178,9 @@ if st.sidebar.button("Get Real-Time AQI"):
 
 # User input for PM10 prediction
 st.sidebar.header("INPUT FEATURES:")
-input_rf = st.sidebar.slider("Rainfall (mm/day):", 0.0, 500.0, step=0.1)
+input_rf = st.sidebar.slider("Rainfall (mm/day):", 0.0, 300.0, step=0.1)
 input_rh = st.sidebar.slider("Relative Humidity (%):", 0.0, 100.0, step=0.1)
-input_ws = st.sidebar.slider("Wind Speed (km/hr):", 0.0, 100.0, step=0.1)
+input_ws = st.sidebar.slider("Wind Speed (km/hr):", 0.0, 10.0, step=0.1)
 input_at = st.sidebar.slider("Average Daily Temperature (degC):", 0.0, 50.0, step=0.1)
 input_wd = st.sidebar.slider("Wind Direction (Degrees):", 0.0, 360.0, step=1.0)
 
